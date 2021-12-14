@@ -1,0 +1,44 @@
+깃 버전 관리
+    1. git config user.name ' ' # 깃 환경에서 이름을 ' '로 지정합니다.
+    2. git config user.email '*@*' # 깃 환경에서 메일을 '*@*'로 지정합니다.
+    3. git init # 현재 우치에 지역 저장소를 만듭니다.
+    5. git init abc # abc 디렉토리를 만드는 동시에 지역 저장소로 만듭니다.
+    6. git status # 깃 상태를 확인합니다.
+    7. git add . # 수정한 전체 파일을 스테이지에 올립니다.
+    8. git add abc.txt # abc.txt 파일을 스테이지에 올립니다.
+    9. git commit -m "abc.txt" # 커밋 메시지 "abc"를 붙여 커밋합니다.
+    10. git commit -am "abc" # 메시지 "abc"를 붙여 스테이징과 커밋을 동시에 합니다.
+    11. git log # 커밋 정보를 확인합니다.
+    12. git log --oneline # 커밋 로그에서 한 줄에 한 커밋씩 표시합니다.
+    13. git log --branches --graph # 커밋 로그에 각 브랜치의 커밋을 그래프로 표시합니다.
+    14. git diff # 최근 버전과 작업 폴더의 수정 파일 사이 차이를 보여줍니다.
+    15. git checkout 커밋 해시 # 지정한 커밋 해시로 이동합니다.
+    16. git checkout -d abc # abc 브랜치를 만드는 것과 동시에 체크아웃합니다.
+    17. git reset HEAD^ # 가장 최근 커밋을 취소합니다.
+    18. git reset 커밋 해시 # 지정한 커밋 해시로 이동하고 이후 커밋은 취소합니다.
+    19. git reset c1 커밋 해시 # 현재 커밋을 다른 브랜치에 있는 c1 커밋으로 되돌립니다.
+    20. git revert 커밋 해시 # 지정한 커밋 해시의 변경 이력을 취소합니다.
+
+깃 브랜치
+    1. git branch abc # 새로운 브랜치 abc를 만듭니다.
+    2. git checkout abc # abc 브랜치로 체크아웃합니다.
+    3. git add . # 수정한 전체 파일을 스테이지에 올립니다.
+    4. git merge abc # abc 브랜치를 master 브랜치에 병합합니다.
+    5. git branch -d abc # 병합이 끝난 abc 브랜치를 삭제합니다.
+    6. git stash # 작업 트리의 수정 내용를 따로 보관해서 감춥니다.
+    7. git stash pop # 따로 보관했던 수정 내용을 꺼내옵니다.
+
+깃 백업
+    1. git remote add oringe 저장소 주소 # 원격 저장소에 연결합니다.
+    2. git remote -v # 원격 저장소에 연결됐는지 확인합니다.
+    3, git push -u master # 지역 저장소의 커밋을 맨 처음 원격 저장소로 올립니다.
+    4. git push # 지역 저장소의 커밋을 멘 처음 원격 저장소로 올립니다.
+    5. git pull # (한번 올리기 한 후에) 지역 저장소의 원격 저장소로 올립니다.
+    6.ssh-key # ssh 키를 만듭니다.
+
+깃 협업
+    1. git clone 원격 저장소 주소 abc # 원격 저장소를 abc라는 지역 저장소로 복제합니다.
+    2. git fetch # 원격 저장소의 커밋을 가져오기만 하고 병합하진 않습니다.
+    3. git checkout FETCH_HEAD # 페치로 가져온 정보가 있는 브랜치(FETCH_HEAD)로 이동합니다.
+    4. git merge FETCH_HEAD # 페치로 가져온 정보가 있는 브랜치(FETCH_HEAD)로 master 브랜치에 병합합니다.
+    5. git push origin abc # 원격 저장소에 abc 브랜치의 커밋을 올립니다.
