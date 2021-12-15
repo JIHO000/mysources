@@ -31,7 +31,7 @@
 깃 백업
     1. git remote add oringe 저장소 주소 # 원격 저장소에 연결합니다.
     2. git remote -v # 원격 저장소에 연결됐는지 확인합니다.
-    3, git push -u master # 지역 저장소의 커밋을 맨 처음 원격 저장소로 올립니다.
+    3. git push -u master # 지역 저장소의 커밋을 맨 처음 원격 저장소로 올립니다.
     4. git push # 지역 저장소의 커밋을 멘 처음 원격 저장소로 올립니다.
     5. git pull # (한번 올리기 한 후에) 지역 저장소의 원격 저장소로 올립니다.
     6.ssh-key # ssh 키를 만듭니다.
@@ -42,3 +42,4 @@
     3. git checkout FETCH_HEAD # 페치로 가져온 정보가 있는 브랜치(FETCH_HEAD)로 이동합니다.
     4. git merge FETCH_HEAD # 페치로 가져온 정보가 있는 브랜치(FETCH_HEAD)로 master 브랜치에 병합합니다.
     5. git push origin abc # 원격 저장소에 abc 브랜치의 커밋을 올립니다.
+    
