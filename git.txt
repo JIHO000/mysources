@@ -32,6 +32,7 @@
     1. git remote add origin 저장소 주소 # 원격 저장소에 연결합니다.
     2. git remote -v # 원격 저장소에 연결됐는지 확인합니다.
     3. git push -u master # 지역 저장소의 커밋을 맨 처음 원격 저장소로 올립니다.
+    git push origin master
     4. git push # 지역 저장소의 커밋을 멘 처음 원격 저장소로 올립니다.
     $ git pull origin master
     5. git pull # (한번 올리기 한 후에) 지역 저장소의 원격 저장소로 올립니다.
